@@ -2,6 +2,7 @@ package tests;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.sleep;
+import static com.codeborne.selenide.Selenide.*;
 import static org.junit.Assert.*;
 
 import org.junit.AfterClass;
@@ -48,8 +49,10 @@ public class Test_Selenide_CI_Test {
 	        System.out.println("DISPLAY: " + System.getenv("DISPLAY"));
 	        
 	        open("https://www.google.com/");
+	        sleep(10000);
+	        $("[name='q']").setValue("Selenide").pressEnter();
 	        
-	        sleep(20000);
+	        sleep(10000);
 	}
 
 }
