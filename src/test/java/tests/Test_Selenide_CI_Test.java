@@ -50,7 +50,7 @@ public class Test_Selenide_CI_Test {
 	        
 	        open("https://www.google.com/");
 	        sleep(10000);
-	        $("[name='q']").setValue("Selenide").pressEnter();
+	        $("[name='q']").setValue("FES Acatlan").pressEnter();
 	        
 	        sleep(10000);
 	}
