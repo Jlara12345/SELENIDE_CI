@@ -13,7 +13,7 @@ import com.codeborne.selenide.Configuration;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Test_Selenide_CI {
+public class Test_Selenide_CI_Test {
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
