@@ -44,6 +44,9 @@ public class Test_Selenide_CI {
 	        //Instruccion para maximizar el navegador
 	       // Configuration.startMaximized = true;
 	        
+	        System.out.println("HEADLESS: " + Configuration.headless);
+	        System.out.println("DISPLAY: " + System.getenv("DISPLAY"));
+	        
 	        open("https://www.google.com/");
 	        
 	        sleep(20000);
